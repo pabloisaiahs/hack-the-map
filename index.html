@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Location Search</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Calendar -->
+        <link href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" rel="stylesheet">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Custom Stylesheet -->
+        <link href="styles.css" rel="stylesheet">
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16"><path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849"/></svg>
+            HooTravels</a>
+    </nav>
+    <!-- User information div -->
+    <div class="user-info">
+        <h1 id="motto">Begin your travel journey today.</h1>
+        <div class="user-info-card container">
+            <!-- Destination and Origin -->
+            <div class="row">
+            <div class="col col-md-12" id="destination">
+                <h4>Destination</h4>
+                <div class="autocomplete mb-10">
+                <input id="destinationInput" type="text" name="destination" placeholder="Enter your destination here" class="form-control" autocomplete="off">
+                </div>
+                <div id="destinationSuggestions" class="autocomplete-items"></div>
+            </div>
+            <div class="col col-md-12" id="departure">
+                <h4>Departure</h4>
+                <div class="autocomplete">
+                <input id="originInput" type="text" name="origin" placeholder="Enter your point of origin" class="form-control" autocomplete="off">
+                </div>
+                <div id="originSuggestions" class="autocomplete-items"></div>
+            </div>
+            </div>
+        
+            <!-- Number of People, Start Date and End Date -->
+            <div class="people-dates row">
+            <!-- Number of People Dropdown -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                    <label for="numberOfPeople">Number of People</label>
+                    <select id="numberOfPeople" class="form-control" name="numberOfPeople">
+                        <!-- Options will be inserted here -->
+                    </select>
+                    </div>
+                </div>   
+                <!-- Start Date Picker -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="text" class="form-control" id="startDate" placeholder="Select start date" autocomplete="off">
+                    </div>
+                </div>
+                <!-- End Date Picker -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                    <label for="endDate">End Date</label>
+                    <input type="text" class="form-control" id="endDate" placeholder="Select end date" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Submit Button -->
+            <div class="row">
+            <div class="col text-center">
+                <button id="travelButton" class="btn btn-primary">Let's Travel</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Flights to Destination Section -->
+<div id="flightsToDestination" class="flight-results container" style="display: none;">
+    <h2>Available Flights to Your Destination</h2>
+    <div class="row">
+        <!-- Flight cards will be dynamically inserted here -->
+    </div>
+    <!-- <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          The current link item
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+        <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+      </div> -->
+</div>
+
+<!-- Flights from Destination Section -->
+<div id="flightsFromDestination" class="flight-results container" style="display: none;">
+    <h2>Available Return Flights</h2>
+    <div class="row">
+        <!-- Flight cards will be dynamically inserted here -->
+    </div>
+</div>
+
+  
+
+  <!-- Bootstrap and jQuery libraries -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<!-- JavaScripts -->
+<script src="autocomplete.js"></script>
+<script src="calendar.js"></script>
+<script src="form.js"></script>
+<script src="flights.js"></script>
+</body>
+</html>
