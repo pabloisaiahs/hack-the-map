@@ -3,14 +3,13 @@
 # HooTravels Hack-a-Map Hackathon 2024 02/24/2024-02/25/2024
 
 ## Authors
-* Participants:
-1.) Emmanuel Zapata 
-2.) Paul Rosa
-3.) Laura Lee
+* 1.) Emmanuel Zapata 
+* 2.) Paul Rosa
+* 3.) Laura Lee
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+* An in-depth paragraph about your project and overview of use.
 
 ## Getting Started
 
