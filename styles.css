@@ -79,3 +79,14 @@
 #departure {
     margin: 10px 0px;
 }
+
+#safetyInformation {
+    background-color: #364559;
+    color: #F8F9FA;
+    border-radius: 10px;
+}
+
+#safetyInformation-background {
+    background-color: #364559;
+    padding: 2% 0%;
+}
