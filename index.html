@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Location Search</title>
+        <title>HooTravels</title>
         <!-- Bootstrap CSS -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Calendar -->
@@ -80,7 +80,7 @@
         </div>
     </div>
     <!-- Flights to Destination Section -->
-<div id="flightsToDestination" class="flight-results container" style="display: none;">
+<!-- <div id="flightsToDestination" class="flight-results container" style="display: none;">
     <h2>Available Flights to Your Destination</h2>
     <div class="row">
         <!-- Flight cards will be dynamically inserted here -->
@@ -94,13 +94,20 @@
         <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
         <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
       </div> -->
-</div>
+</div> -->
 
 <!-- Flights from Destination Section -->
 <div id="flightsFromDestination" class="flight-results container" style="display: none;">
     <h2>Available Return Flights</h2>
     <div class="row">
         <!-- Flight cards will be dynamically inserted here -->
+    </div>
+</div>
+<!-- Safety Information Section -->
+<div id="safetyInformation" class="safety-info container" style="display: none;">
+    <h2>Safety information for <span id="safetyDestination">[Destination]</span></h2>
+    <div id="safetyContent">
+        <!-- Safety information will be inserted here -->
     </div>
 </div>
 
@@ -112,9 +119,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
 <!-- JavaScripts -->
-<script src="autocomplete.js"></script>
-<script src="calendar.js"></script>
-<script src="form.js"></script>
-<script src="flights.js"></script>
+<script src="dist/autocomplete.bundle.js"></script>
+<script src="dist/calendar.bundle.js"></script>
+<script src="dist/form.bundle.js"></script>
+<script src="dist/flights.bundle.js"></script>
+<script src="dist/safetyInfo.bundle.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){const e=document.getElementById("numberOfPeople");for(let t=1;t<=15;t++){const n=document.createElement("option");n.value=t,n.textContent=t+(1===t?" person":" people"),e.appendChild(n)}new Pikaday({field:document.getElementById("startDate")}),new Pikaday({field:document.getElementById("endDate")})}));
