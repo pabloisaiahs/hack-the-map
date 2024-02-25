@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
 // Import the country-list package
 const { getCode, getName } = require('country-list');
 
-console.log(getName('IS')); // Iceland
-console.log(getCode('Iceland')); // IS
-console.log(getCode('Nowhere-to-be-found-land')); // undefined
+// console.log(getName('IS')); // Iceland
+// console.log(getCode('Iceland')); // IS
+// console.log(getCode('Nowhere-to-be-found-land')); // undefined
 
-console.log(getCountryCode('United States')); // Should log 'US'
+// console.log(getCountryCode('United States')); // Should log 'US'
 
 function toggleSafetyInformation(show) {
     var safetyInfo = document.getElementById('safetyInformation-background');
@@ -41,8 +41,8 @@ function getCountryCode(countryName) {
     "Taiwan":"Taiwan, Province of China",
     "Vietnam":"Viet Nam",
     "East Timor":"Timor-Leste",
-    "South Korea":"Korea, Republic of",
-    "North Korea":"Korea, Democratic People's Republic of",
+    "South Korea":"Korea, Democratic People's Republic of",
+    "North Korea":"Korea, Republic of",
     "Congo":"Congo, Democratic Republic of the"
   };
 

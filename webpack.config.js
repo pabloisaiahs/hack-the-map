@@ -6,7 +6,8 @@ module.exports = {
     calendar: './calendar.js',
     flights: './flights.js',
     form: './form.js',
-    safetyInfo: './safetyInfo.js'
+    safetyInfo: './safetyInfo.js',
+    hotelData: './hotelData.js'
   },
   output: {
     filename: '[name].bundle.js',

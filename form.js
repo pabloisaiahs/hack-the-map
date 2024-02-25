@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // If all fields are filled and the date range is valid, alert the user with the information
-    alert(`Destination: ${destination}, Origin: ${origin}, Number of People: ${numberOfPeople}, Date Range: ${startDate} to ${endDate}`);
+    // alert(`Destination: ${destination}, Origin: ${origin}, Number of People: ${numberOfPeople}, Date Range: ${startDate} to ${endDate}`);
   }
 
   // Function to check if the date range is valid
