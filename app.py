@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 import openai
 
-app = Flask(__name__, template_folder = 'templates')
+app = Flask(__name__, template_folder = 'docs')
 
 
 openai.api_key = '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'
